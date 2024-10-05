@@ -11,36 +11,38 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel='stylesheet' href='style.css'>
 </head>
+
 <body>
-	<header>
-		<nav>	
-			<img id = 'imgLogo' src = './images/logo.svg'>
-			<img id = 'imgHamburger' src = './images/icon-menu.svg' onclick = 'openNavbar()'>	
-			<div id = 'divNav'>
-				<ul id = 'navList'>
-					<li onclick = 'openNavbar_drop("0")'>
-						<a>Features</a>
-						<img src = './images/icon-arrow-down.svg'>
-					</li>
-					<li onclick = 'openNavbar_drop("1")'>
-						<a>Company</a>
-						<img src = './images/icon-arrow-down.svg'>
-					</li>
-					<li>
-						<a>Careers</a>
-					</li>
-					<li>
-						<a>About</a>
-					</li>
-				</ul>
-				<div id = 'divNav_right'>
-					<button>Login</button>
-					<button>Register</button>
-				</div>
-			</div>
-		</nav>
-	</header>
+	<div id = 'divOverlay' class = 'bgcolorAlmostblack'></div>
 	<main>
+		<header>
+			<nav>	
+				<img id = 'imgLogo' src = './images/logo.svg'>
+				<img id = 'imgHamburger' src = './images/icon-menu.svg' onclick = 'openNavbar()'>	
+				<div id = 'divNav' class = 'bgcolorAlmostwhite'>
+					<ul id = 'navList'>
+						<li onclick = 'openNavbar_drop("0")'>
+							<a>Features</a>
+							<img src = './images/icon-arrow-down.svg'>
+						</li>
+						<li onclick = 'openNavbar_drop("1")'>
+							<a>Company</a>
+							<img src = './images/icon-arrow-down.svg'>
+						</li>
+						<li>
+							<a>Careers</a>
+						</li>
+						<li>
+							<a>About</a>
+						</li>
+					</ul>
+					<div id = 'divNav_right'>
+						<button>Login</button>
+						<button>Register</button>
+					</div>
+				</div>
+			</nav>
+		</header>
 		<div id = 'mainContent'>
 			<picture>
 				<source srcset = "./images/image-hero-mobile.png" media="(max-width: 390px)">

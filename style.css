@@ -6,7 +6,7 @@
 .colorAlmostwhite{
 	color: hsl(0,0%,98%);
 }
-.colorMediumGray{
+.colorMediumgray{
 	color: hsl(0, 0%, 41%);
 }
 .colorAlmostblack{
@@ -16,7 +16,7 @@
 .bgcolorAlmostwhite{
 	background-color: hsl(0,0%,98%);
 }
-.bgcolorMediumGray{
+.bgcolorMediumgray{
 	background-color: hsl(0, 0%, 41%);
 }
 .bgcolorAlmostblack{
@@ -97,6 +97,43 @@ body{
 
 /* MOBILE */
 @media screen and (max-width: 390px){
+/*
+Z index */
+	
+	main{
+		z-index: 1;
+	}
+	#divOverlay{
+		z-index: 2;
+	}
+	#divNav{
+		position: relative;
+		z-index: 3;
+	}
+	#imgHamburger{
+		position: relative;
+		z-index: 3;
+	}
+	.attribution{
+		position:absolute;
+		z-index: 1;
+	}	
+	
+/* 
+overlay background  */
+	
+	#divOverlay{
+		display:None;
+		position: fixed;
+		opacity: 0.7;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+/*
+BODY */
+	
 	body{
 		margin: 0;
 		padding: 0;
@@ -104,12 +141,26 @@ body{
 	main{
 		
 	}
-	/* navBar */
+/* 
+navBar */
+	nav{
 	
+	}
 	#divNav{
 		display: none;
+		position:fixed;
+		left: 40%;
+		top:0;
+		bottom: 0;
+		right: 0;
 	}
-	/* main content*/
+	#imgHamburger{
+		
+	}
+	
+	
+	
+/* main content*/
 	#mainContent{
 		display: flex;
 		align-items: center;
@@ -145,6 +196,7 @@ body{
 	#imgBrand_audio{
 		height: 30px;
 	}
+
 	
 }
 /*** 
@@ -153,6 +205,8 @@ DESKTOP
 
 ***/
 @media screen and (min-width: 391px){
+	
+	
 	/* navBar */
 	header{
 		
