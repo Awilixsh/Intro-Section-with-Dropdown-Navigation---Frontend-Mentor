@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+	<header>
+		<nav>	
+			<img id = 'imgLogo' src = './images/logo.svg'>
+			<div id = 'divNav'>
+				<ul id = 'navList'>
+					<li onclick = 'openNavbar_drop("0")'>
+						<a>Features</a>
+						<img src = './images/icon-arrow-down.svg'>
+					</li>
+					<li onclick = 'openNavbar_drop("1")'>
+						<a>Company</a>
+						<img src = './images/icon-arrow-down.svg'>
+					</li>
+					<li>
+						<a>Careers</a>
+					</li>
+					<li>
+						<a>About</a>
+					</li>
+				</ul>
+				<div id = 'divNav_right'>
+					<button>Login</button>
+					<button>Register</button>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div id = 'mainContent'>
+			<picture>
+				<source srcset = "./images/image-hero-mobile.png" media="(max-width: 390px)">
+				<img id = 'pictureMain' src = "./images/image-hero-desktop.png">
+			</picture>	
+			<h1>
+				<span>Make</span><span>remote work</span>
+			</h1>
+			<p>
+				Get your team in sync, no matter your location. Streamline processes, 
+				create team rituals, and watch productivity soar.
+			</p>
+			<button type='button' id = 'buttonReadmore' class = 'bgcolorAlmostblack colorAlmostwhite'>
+			Learn more
+			</button>
+			<div id = 'divPicture'>
+				<img class = 'imgBrand' src = './images/client-databiz.svg'>
+				<img id = 'imgBrand_audio' src = './images/client-audiophile.svg'>
+				<img class = 'imgBrand' src = './images/client-meet.svg'>
+				<img class = 'imgBrand' src = './images/client-maker.svg'>
+			</div>
+		</div>
+	</main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Awilixsh</a>.
+  </div>
+  <script type='text/javascript' src = './script.js'></script>
+</body>
+</html>
