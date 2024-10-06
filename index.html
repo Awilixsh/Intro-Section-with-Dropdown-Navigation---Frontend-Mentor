@@ -19,15 +19,27 @@
 			<nav>	
 				<img id = 'imgLogo' src = './images/logo.svg'>
 				<img id = 'imgHamburger' src = './images/icon-menu.svg' onclick = 'openNavbar()'>	
-				<div id = 'divNav' class = 'bgcolorAlmostwhite'>
+				<div id = 'divNav'>
+					<img id = 'imgClose' src = './images/icon-close-menu.svg' onclick = 'openNavbar()'>	
 					<ul id = 'navList'>
 						<li onclick = 'openNavbar_drop("0")'>
 							<a>Features</a>
 							<img src = './images/icon-arrow-down.svg'>
+							<ul id = 'navFeature'>
+								<li><img src = './images/icon-todo.svg'><a>ToDo List</a></li>
+								<li><img src = './images/icon-calendar.svg'><a>Calendar</a></li>
+								<li><img src = './images/icon-reminders.svg'><a>Reminders</a></li>
+								<li><img src = './images/icon-planning.svg'<a>Planning</a></li>
+							</ul>
 						</li>
-						<li onclick = 'openNavbar_drop("1")'>
+						<li onclick = 'openNavbar_drop("5")'>
 							<a>Company</a>
 							<img src = './images/icon-arrow-down.svg'>
+							<ul id = 'navCompany'>
+								<li>History</li>
+								<li>Our Team</li>
+								<li>Blog</li>
+							</ul>
 						</li>
 						<li>
 							<a>Careers</a>

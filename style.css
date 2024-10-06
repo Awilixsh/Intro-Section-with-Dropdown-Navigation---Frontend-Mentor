@@ -44,10 +44,29 @@ nav{
 	
 }
 
+#navFeature{
+	display: none;
+}
+#navCompany{
+	display: none;
+}
+
 /*navbar*/
 
 ul{
 	list-style-type: none;
+}
+#divNav_right button{
+	background-color: transparent;
+	font-family: epilogue;
+	border-radius: 14px;
+	padding: 14px 22px 14px 22px;
+}
+#divNav_right button:first-child{
+	border: 0px;
+}
+#divNav_right button:nth-child(2){
+	border: 2px solid;
 }
 /* MAIN */
 
@@ -112,7 +131,6 @@ Z index */
 	}
 	#imgHamburger{
 		position: relative;
-		z-index: 3;
 	}
 	.attribution{
 		position:absolute;
@@ -153,11 +171,26 @@ navBar */
 		top:0;
 		bottom: 0;
 		right: 0;
+		padding: 60px 20px 0 20px;
 	}
-	#imgHamburger{
+	#navList{
+		padding: 0;
+	}
+	#navList li{
+		margin-top: 20px;
+	}
+	#divNav_right{
+		display: flex;
+		flex-flow: column wrap;
+	}
+	#imgClose{
+		position:fixed;
+		right: 20px;
+		top: 28px;
+	}
+	#navList{
 		
 	}
-	
 	
 	
 /* main content*/
@@ -236,25 +269,17 @@ DESKTOP
 		display: flex;
 		gap: 10px;
 	}
-	#divNav_right button{
-		background-color: transparent;
-		font-family: epilogue;
-		border-radius: 14px;
-		padding: 14px 22px 14px 22px;
-	}
-	#divNav_right button:first-child{
-		border: 0px;
-	}
-	#divNav_right button:nth-child(2){
-		border: 2px solid;
-	}
+	
 	#imgLogo{
 		margin-top: 14px;
+	}
+	#imgClose{
+		display: none;
 	}
 	#imgHamburger{
 		display: none;
 	}
-	/* main content*/
+/* main content*/
 	#mainContent{
 		width: 1140px;
 		margin: 0 auto;
@@ -310,6 +335,15 @@ DESKTOP GRID LAYOUT
 		grid-column: 2/3;
 		grid-row: 1/2;
 	}
+	#navList li ul{
+		position: fixed;
+		top: 80px;
+	}
+/* FEATURES - SUB NAV */
+	#navFeature{
+		
+	}
+	
 		/* main content */
 	#mainContent{
 		display: grid;
@@ -335,9 +369,15 @@ DESKTOP GRID LAYOUT
 DESKTOP Z INDEX 
 
 ***/
-
-
-
+	main{
+		z-index: 1;
+	}
+	#navFeature{
+		z-index: 2;
+	}
+	#navCompany{
+		z-index: 2;
+	}
 }
 .attribution { padding-top: 10px; font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
