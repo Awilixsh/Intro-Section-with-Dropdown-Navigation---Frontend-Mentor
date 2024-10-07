@@ -27,6 +27,10 @@
 
 /* BODY */
 
+html{
+	background-color: hsl(0,0%,98%);
+}
+
 body{
 	font-family: epilogue;	
 }
@@ -68,6 +72,10 @@ ul{
 #divNav_right button:nth-child(2){
 	border: 2px solid;
 }
+#navList li ul li{
+	margin-top: 20px;
+}
+
 /* MAIN */
 
 /* */
@@ -89,6 +97,7 @@ p{
 	height: 64px;
 	width: 160px;
 }
+
 /* PHONE */
 
 /* image brands */
@@ -176,9 +185,7 @@ navBar */
 	#navList{
 		padding: 0;
 	}
-	#navList li{
-		margin-top: 20px;
-	}
+	
 	#divNav_right{
 		display: flex;
 		flex-flow: column wrap;
@@ -191,9 +198,21 @@ navBar */
 	#navList{
 		
 	}
+	#navList li:active{
+		color: hsl(0, 0%, 8%);
+	}
+	#navList li:visited{
+		color: hsl(0, 0%, 8%);
+	}
+	#divNav_right button:active{
+		color: hsl(0, 0%, 8%);
+	}
+	#navList li{
+		margin-top: 20px;
+	}
 	
-	
-/* main content*/
+/* 
+main content*/
 	#mainContent{
 		display: flex;
 		align-items: center;
@@ -215,8 +234,10 @@ navBar */
 		padding: 0px 10px 0px 10px;
 		line-height: 1.8;
 	}
-	button{
-		
+	#buttonReadmore:active{
+		background-color: hsl(0,0%,98%);
+		color: hsl(0, 0%, 8%);
+		border: 1px solid hsl(0, 0%, 8%); 
 	}
 	#divPicture{
 		margin-top: 30px;
@@ -249,13 +270,19 @@ DESKTOP
 	}
 	nav{
 	}
+	#navList li ul{
+		border-radius: 20px;
+	}
+	#navList li ul li{
+		margin-bottom: 10px;
+	}
 	ul{
 		display: flex;
 		flex-direction: column wrap;
 		align-items: center;
 		margin: 0;
 		padding: 0;
-		gap: 20px;
+		gap: 50px;
 	}
 	ul li{
 		display: flex;
@@ -265,11 +292,26 @@ DESKTOP
 	ul li img{
 		width: 14px;
 	}
+	.navSublist{
+		background-color: white;
+		box-shadow: 30px;
+		padding: 10px 20px 10px 20px;
+	}
+	.navList li div{
+		display: flex;
+		gap: 20px;
+	}
+	#navFeature{
+		left: 120px;
+	}
+	#navCompany{
+		left: 280px;
+	}
 	#divNav_right{
 		display: flex;
 		gap: 10px;
 	}
-	
+		
 	#imgLogo{
 		margin-top: 14px;
 	}
@@ -278,6 +320,12 @@ DESKTOP
 	}
 	#imgHamburger{
 		display: none;
+	}
+	#navList li:hover{
+		color: hsl(0, 0%, 8%);
+	}
+	#divNav_right button:hover{
+		color: hsl(0, 0%, 8%);
 	}
 /* main content*/
 	#mainContent{
@@ -303,7 +351,11 @@ DESKTOP
 	#buttonReadmore{
 		margin-top: 20px; 
 	}
-	
+	#buttonReadmore:active{
+		background-color: hsl(0,0%,98%);
+		color: hsl(0, 0%, 8%);
+		border: 1px solid hsl(0, 0%, 8%); 
+	}
 	
 /*** 
 
@@ -372,10 +424,10 @@ DESKTOP Z INDEX
 	main{
 		z-index: 1;
 	}
-	#navFeature{
+	#navSublist{
 		z-index: 2;
 	}
-	#navCompany{
+	#navSublist{
 		z-index: 2;
 	}
 }
