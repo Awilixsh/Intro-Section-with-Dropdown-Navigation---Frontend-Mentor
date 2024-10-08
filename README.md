@@ -23,14 +23,17 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![Mobile](./screenshot-mobile.png)
+![MobileActive](./screenshot-mobile-active.png)
+![Desktop](./screenshot-desktop.png)
+![DestopActive](./screenshot-desktop-active.png)
 
 
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: []()
+- Solution URL: [Github](https://github.com/Awilixsh/Intro-Section-with-Dropdown-Navigation---Frontend-Mentor)
+- Live Site URL: [Github Pages](https://awilixsh.github.io/Intro-Section-with-Dropdown-Navigation---Frontend-Mentor/)
 
 ## My process
 

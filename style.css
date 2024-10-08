@@ -113,6 +113,11 @@ p{
 #imgBrand_audio{
 	padding-left: 16px;
 }
+#buttonReadmore:active{
+	background-color: hsl(0,0%,98%);
+	color: hsl(0, 0%, 8%);
+	border: 1px solid hsl(0, 0%, 8%); 
+}
 /***
 
 Z INDEX
@@ -198,10 +203,10 @@ navBar */
 	#navList{
 		
 	}
-	#navList li:active{
+	#navList li a:active{
 		color: hsl(0, 0%, 8%);
 	}
-	#navList li:visited{
+	#navList li ul li:active{
 		color: hsl(0, 0%, 8%);
 	}
 	#divNav_right button:active{
@@ -234,11 +239,6 @@ main content*/
 		padding: 0px 10px 0px 10px;
 		line-height: 1.8;
 	}
-	#buttonReadmore:active{
-		background-color: hsl(0,0%,98%);
-		color: hsl(0, 0%, 8%);
-		border: 1px solid hsl(0, 0%, 8%); 
-	}
 	#divPicture{
 		margin-top: 30px;
 		margin-bottom: 30px;
@@ -268,7 +268,8 @@ DESKTOP
 	#imgBurger{
 		
 	}
-	nav{
+	#navList{
+		padding-right: 120px;
 	}
 	#navList li ul{
 		border-radius: 20px;
@@ -294,7 +295,7 @@ DESKTOP
 	}
 	.navSublist{
 		background-color: white;
-		box-shadow: 30px;
+		box-shadow: 100px;
 		padding: 10px 20px 10px 20px;
 	}
 	.navList li div{
@@ -321,14 +322,19 @@ DESKTOP
 	#imgHamburger{
 		display: none;
 	}
-	#navList li:hover{
+	#navList li a:hover{
+		color: hsl(0, 0%, 8%);
+	}
+	#navList li ul li:hover{
 		color: hsl(0, 0%, 8%);
 	}
 	#divNav_right button:hover{
 		color: hsl(0, 0%, 8%);
 	}
+	
 /* main content*/
 	#mainContent{
+		padding-top: 40px;
 		width: 1140px;
 		margin: 0 auto;
 	}
@@ -351,11 +357,7 @@ DESKTOP
 	#buttonReadmore{
 		margin-top: 20px; 
 	}
-	#buttonReadmore:active{
-		background-color: hsl(0,0%,98%);
-		color: hsl(0, 0%, 8%);
-		border: 1px solid hsl(0, 0%, 8%); 
-	}
+	
 	
 /*** 
 
